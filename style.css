@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -9,8 +11,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   height: 100vh;
   overflow: hidden;
+  font-family: VT323;
+}
+
+h2 {
+  color: #6a2c70;
+  margin-bottom: 10px;
 }
 
 .container {
@@ -32,4 +41,23 @@ body {
 
 .square:hover {
   transition-duration: 0s;
+}
+
+.input {
+  background-color: #1d1d1d;
+  border: none;
+  color: #6a2c70;
+  font-weight: bold;
+  outline: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  height: 30px;
+  width: 100px;
+  text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
